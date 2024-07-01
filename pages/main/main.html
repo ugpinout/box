@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>主页</title>  
+    <script src="../../js/mui.min.js"></script>
+	<script type="module" src="main.js"></script>
+    <link href="../../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="main.css" />
+	<script>
+		mui.init();  
+	</script>
+</head>
+<body> 
+	<div class="mui-off-canvas-wrap mui-draggable ">
+	  <!-- 菜单容器 -->
+	  <aside id="mySidebar" class="mui-off-canvas-left">
+	    <div class="mui-scroll-wrapper">
+	      <div class="mui-scroll">
+			  
+			  <!-- icon 图标 -->
+	        <div class="mui-card icon"> 
+				<img class="icon_img" src="../../images/icon.png" alt="" />
+				<h2 style="margin: 5%;"> 收纳盒 </h2>
+	        </div>
+			
+			  <!-- 功能列表框 -->
+			<div class="mui-card lis">
+
+				<ul  class="mui-table-view">
+					<!-- 添加新的盒子 列表 -->
+				    <li class="mui-table-view-cell mui-media">
+				        <a class="mui-navigate-right" style="display: flex;align-items: center;">
+							<img class="mui-media-object mui-pull-left" style="width: 5vw;height:5vw;" src="../../images/add_mall.png"/>
+				            <div id="add_new" class="mui-media-body">
+				                <h5 class="mui-h lis">添加新的盒子</h5>
+				                <p class='mui-ellipsis lis'>这里添加空的盒子</p>
+				            </div>
+				        </a>
+				    </li>
+					<!-- 配置服务器 列表 -->
+				    <li id="set_FTP" class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" style="display: flex;align-items: center;">
+						<img class="mui-media-object mui-pull-left" style="width: 7vw;height:7vw;" src="../../images/FTP.png"/>
+							<div class="mui-media-body">
+								<h5 class="mui-h lis">配置FTP服务器</h5>
+								<p class='mui-ellipsis lis'>用于备份数据</p>
+							</div>
+						</a>
+				    </li>
+					
+					<!-- 备份数据 列表 -->
+				    <li id="buck_list" class="mui-table-view-cell mui-media">
+				    	<a class="mui-navigate-right" style="display: flex;align-items: center;">
+				    	<img class="mui-media-object mui-pull-left" style="width: 5vw;height:5vw;" src="../../images/export.png"/>
+				    		<div class="mui-media-body">
+				    			<h5 class="mui-h lis">备份数据</h5>
+				    			<p class='mui-ellipsis lis'>数据备份到数据库</p>
+				    		</div>
+				    	</a>
+				    </li>
+					
+					<!-- 恢复数据 列表 -->
+					<li id="down_list" class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" style="display: flex;align-items: center;">
+						<img class="mui-media-object mui-pull-left" style="width: 6vw;height:6vw;" src="../../images/import.png"/>
+							<div class="mui-media-body">
+								<h5 class="mui-h lis">恢复数据</h5>
+								<p class='mui-ellipsis lis'>数据下载到本地</p>
+							</div>
+						</a>
+					</li>
+					
+					<!-- 用户协议 列表 -->
+					<li id="term_txt" class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" style="display: flex;align-items: center;">
+						<img class="mui-media-object mui-pull-left" style="width: 6vw;height:6vw;" src="../../images/term.png"/>
+							<div class="mui-media-body">
+								<h5 class="mui-h lis">用户协议</h5>
+								<p class='mui-ellipsis lis'>这样显得比较专业</p>
+							</div>
+						</a>
+					</li>					
+
+					<!-- 关于APP 列表 -->
+					<li id="about_txt" class="mui-table-view-cell mui-media">
+						<a class="mui-navigate-right" style="display: flex;align-items: center;">
+						<img class="mui-media-object mui-pull-left" style="width: 6vw;height:6vw;" src="../../images/about.png"/>
+							<div class="mui-media-body">
+								<h5 class="mui-h lis">关于APP</h5>
+								<p class='mui-ellipsis lis'>有APP使用教程</p>
+							</div>
+						</a>
+					</li>			
+					
+				</ul>
+			</div>
+
+	      </div> 
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a id="showSidebarButton" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+	      <h1 class="mui-title">收纳盒</h1>
+	    </header>
+	   <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	       <!-- 主界面具体展示内容 -->
+			<div class="mui-content">
+			 	<ul class="mui-content mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+							<img src="../../images/box-close.png" style="width: 5vh;height: 5vh;" alt="" srcset="" />
+							<div class="mui-media-body">0204贴片电容</div>
+						</a>
+					</li>
+					
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+							<img src="../../images/box-close.png" style="width: 5vh;height: 5vh;" alt="" srcset="" />
+							<div class="mui-media-body">0408电容</div>
+						</a>
+					</li>
+					
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+							<img src="../../images/box-close.png" style="width: 5vh;height: 5vh;" alt="" srcset="" />
+							<div class="mui-media-body">1303电容</div>
+						</a>
+					</li>
+				</ul>
+			</div> 
+					
+	     </div>
+	    </div> 
+	  </div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+
+* { 
+    touch-action: pan-y; 
+}
+
+
+.mui-off-canvas-left, .mui-off-canvas-right, .mui-off-canvas-left.mui-transitioning.mui-active{
+	background-color:#eee !important;
+}
+.icon_img{
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	border: none;
+	margin: 5vh 5vh 2vh 5vh;
+}
+.mui-card.icon{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	background-color: #eee;
+} 
+
+/* .mui-content,.mui-scroll,.mui-content{
+	overflow-x: hidden; 
+	overflow-y: scroll !important;
+} */
+
+.item-list {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* 去除列表默认样式 */
+}
+
+
+.mui-h.lis{
+	color: black;
+}
