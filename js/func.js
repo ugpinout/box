@@ -44,7 +44,7 @@ export function add_new_box_to_list(data_obj){
 		divElement.setAttribute('id',data_obj[item].ids);
 		divElement.classList.add('mui-media-body');
 		divElement.textContent =data_obj[item].name;
-		
+		 
 		// 将 img 和 div 添加到 a 元素中
 		aElement.appendChild(imgElement);
 		aElement.appendChild(divElement);
