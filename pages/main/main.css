@@ -1,4 +1,3 @@
-
 * { 
     touch-action: pan-y; 
 }
@@ -13,6 +12,9 @@
 	border-radius: 50%;
 	border: none;
 	margin: 5vh 5vh 2vh 5vh;
+}
+li {
+    list-style-type: none;
 }
 .mui-card.icon{
 	display: flex;
