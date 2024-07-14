@@ -24,10 +24,10 @@
         "url" : "http://www.dcloud.io"
     },
     "permissions" : {
-        "SQLite" : {},
         "File" : {
             "description" : "_www"
-        }
+        },
+        "SQLite" : {}
     },
     "plus" : {
         "splashscreen" : {

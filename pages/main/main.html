@@ -30,10 +30,10 @@
 
 				<ul  class="mui-table-view">
 					<!-- 添加新的盒子 列表 -->
-				    <li class="mui-table-view-cell mui-media">
+				    <li id="add_new" class="mui-table-view-cell mui-media">
 				        <a class="mui-navigate-right" style="display: flex;align-items: center;">
 							<img class="mui-media-object mui-pull-left" style="width: 5vw;height:5vw;" src="../../images/add_mall.png"/>
-				            <div id="add_new" class="mui-media-body">
+				            <div class="mui-media-body">
 				                <h5 class="mui-h lis">添加新的盒子</h5>
 				                <p class='mui-ellipsis lis'>这里添加空的盒子</p>
 				            </div>
@@ -102,7 +102,7 @@
 	  </aside>
 	  <!-- 主页面容器 --> 
 	  <div class="mui-inner-wrap">
-	    <!-- 主页面标题 -->
+	    <!-- 主页面标题 --> 
 	    <header class="mui-bar mui-bar-nav">
 	      <a id="showSidebarButton" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
 	      <h1 class="mui-title">收纳盒</h1>
@@ -112,15 +112,35 @@
 	       <!-- 主界面具体展示内容 --> 
 			<div class="mui-content">
 			 	<ul id="box_list" class="mui-content mui-table-view mui-grid-view mui-grid-9">
-					<!-- <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-						<a href="#">
+					
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" value="这个是测试">
+						<a href="#" >
 							<img src="../../images/box-close.png" style="width: 5vh;height: 5vh;" alt="" srcset="" />
-							<div class="mui-media-body">0204贴片电容</div>
+							<div id='1' class="mui-media-body">0204贴片电容</div>
 						</a>
-					</li> -->
+					</li>
+					
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" value="这个是测试">
+						<a href="#" >
+							<img src="../../images/box-close.png" style="width: 5vh;height: 5vh;" alt="" srcset="" />
+							<div id='2' class="mui-media-body">0204贴片电容</div>
+						</a>
+					</li>
+					
 					 
 				</ul>
-			</div> 		   		
+			</div> 
+			
+			<div id="popover" class="mui-popover">
+			  <ul class="mui-table-view">
+				<li class="mui-table-view-cell"><a href="#">Item1</a></li>
+				<li class="mui-table-view-cell"><a href="#">Item2</a></li>
+				<li class="mui-table-view-cell"><a href="#">Item3</a></li>
+<!-- 				<li class="mui-table-view-cell"><a href="#">Item4</a></li>
+				<li class="mui-table-view-cell"><a href="#">Item5</a></li> --> 
+			  </ul>
+			</div>
+			
 	     </div>
 	    </div> 
 	  </div>
